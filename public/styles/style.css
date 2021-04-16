@@ -1,0 +1,58 @@
+@import url(normalize.css);
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main: #FBCFAB;
+  }
+}
+
+/* dark color scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main: #121212;
+    --secondary: #e8e8e8;
+  }
+}
+
+body {
+  background: var(--main);
+}
+
+h1 {
+  text-align: center;
+  color: var(--secondary);
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.pads {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 60em;
+  background-color: blue;
+  margin: 0 auto;
+  padding: 5em 0 2em 0;
+  border-radius: 25px;
+}
+
+.padsgroup {
+  margin: 0 auto;
+}
+
+.padsgroup label {
+  position: relative;
+  cursor: pointer;
+  width: 7vw;
+  height: 7vw;
+  max-width: 5em;
+  max-height: 5em;
+  display: inline-block;
+  background-color: red;
+  margin: 5px;
+}
+
+.padsgroup label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
