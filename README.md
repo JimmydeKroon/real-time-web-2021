@@ -1,6 +1,8 @@
 # Beatogether
 Beatogether is a step sequencer app that allows people to create beats together using real time web technology.
 
+[Link to the live webapp!](https://beatogether.herokuapp.com/)
+
 <br>
 
 ![home](img/home.png "home")

@@ -10,12 +10,12 @@ const firebase = require("firebase");
 require("firebase/firestore");
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCi3UrcHi2JpZtjSK7zovzeNA67zFOK8sw",
-  authDomain: "beatogether-266a9.firebaseapp.com",
-  projectId: "beatogether-266a9",
-  storageBucket: "beatogether-266a9.appspot.com",
-  messagingSenderId: "68947869419",
-  appId: "1:68947869419:web:962ed5e4b4c756477188ae"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId
 };
 
 firebase.initializeApp(firebaseConfig);
