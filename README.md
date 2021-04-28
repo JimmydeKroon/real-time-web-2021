@@ -90,3 +90,18 @@ username holds the users chosen username, so every user will be able to see the 
 message holds the actual message.
 
 usercolor holds the color assigned to a specific user. On page load a randomizer will choose a color out of 6 available colors. By sending this color trough the socket all users will be able to see other users (and themselves) with the right colors.
+
+<br>
+
+# Database
+For this webapp i used firebase to store data. Firebase is easy to use and has a great browser GUI which makes setup a lot easier.
+
+![firebase](img/firebase.png "database - firebase")
+
+<br>
+
+The data is divided in three different documents for all three rows of pads in the application, row 1, row 2 and row 3. In these documents there is an id that is the same as the actual id in the HTML element of the pad, and the value which is either "checked" or "" (empty).
+
+Every click by a user on one of the pads will trigger an update to the database for that specific pad.
+
+When a user connects to the webapp for the first time, the data form firebase is used to activate and deactivate the right pads. After this initial setup new changes will be handled by the socket.
